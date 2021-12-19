@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>FORM AND TABLE USING JavaScript</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    </head>
+    <body>
+        <div class="container" id="myForm">
+            <h1>Enter your data!!</h1>
+            <table>
+                <tr>
+                    
+                    <td><input type="text" id="person_name" placeholder="Enter your name!"></td>
+                </tr>
+                <tr>
+                    <td><input type="text" id="gender" placeholder="Enter your gender"></td>
+                </tr>
+                <tr>
+                    <td><div class="input-group mb-3">
+                        
+                        <select class="custom-select" id="inputGroupSelect">
+                          <option selected>Choose type of food...</option>
+                          <option value="Indian">Indian</option>
+                          <option value="Thai">Thai</option>
+                          <option value="Chiinese">Chinese</option>
+                          <option value="French">French</option>
+                          <option value="Arabian">Arabian</option>
+                        </select>
+                      </div></td>
+                </tr>
+                <tr>
+                    <td><input type="text" id="state" placeholder="state"></td>
+                </tr>
+                <td><input type="text" id="country_of_origin" placeholder="Country"></td>
+                <td><input type="button" id="add" value="Add"></td>
+            </tr>
+        </table>
+        </div>
+
+        <div class="container-fluid" id="my_table">
+            <table id="table_of_information" class="table table-bordered table-stripped">
+                <tr>
+                    <td>DEL</td>
+                    <td>NAME</td>
+                    <td>GENDER</td>
+                    <td>FOOD</td>
+                    <td>STATE</td>
+                    <td>COUNTRY</td>
+                </tr>
+            </table>
+        </div>
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>       
+        <script src="script.js"></script>
+    </body>
+</html>
