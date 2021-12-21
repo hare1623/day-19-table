@@ -8,7 +8,7 @@ document.getElementById('add').addEventListener('click', function(){
     let table = document.getElementById('table_of_information');
     let row_count = table.rows.length;
     let row = table.insertRow(row_count);
-    row.insertCell(0).innerHTML='<input type="button" value="del" onClick="delete_row(this)">';
+    row.insertCell(0).innerHTML='<input type="button" value="del" onClick="delete_row(${row_count})">';
     row.insertCell(1).innerHTML=person_name.value;
     row.insertCell(2).innerHTML=gender.value;
     row.insertCell(3).innerHTML=inputGroupSelect.value;
@@ -16,6 +16,6 @@ document.getElementById('add').addEventListener('click', function(){
     row.insertCell(5).innerHTML=country_of_origin.value;
 });
 
-function delete_row(){
-     document.getElementById('table_of_information').deleteRow(0);                
+function delete_row(row_count){
+     document.getElementById('table_of_information').deleteRow(row_count);                
 }       
